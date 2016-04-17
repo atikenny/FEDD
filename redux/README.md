@@ -2,6 +2,6 @@
 
 ## Docs
 
-Official docs: https://egghead.io/series/getting-started-with-redux
+Official docs: http://redux.js.org/docs/introduction/index.html
 
 Training videos: https://egghead.io/series/getting-started-with-redux
