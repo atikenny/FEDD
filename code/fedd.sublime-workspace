@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"conc",
+				"gulpConcat"
+			],
+			[
 				"sideba",
 				"sidebarClass"
 			],
@@ -510,15 +514,27 @@
 			[
 				"shared",
 				"sharedWithItem"
-			],
-			[
-				"shaw",
-				"sharedWithIndex"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "js/redux.js",
+			"settings":
+			{
+				"buffer_size": 68,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 686,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -734,6 +750,13 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Attila/Code/FEDD/code/package.json",
+		"/C/Users/Attila/Code/uzleti-liga-redesign/gulpfile.js",
+		"/C/Users/Attila/Code/FEDD/code/Gulpfile.js",
+		"/C/Users/Attila/Code/FEDD/code/js/redux.js",
+		"/C/Users/Attila/Code/FEDD/.gitignore",
+		"/C/Users/Attila/Code/FEDD/code/fedd.sublime-project",
+		"/C/Users/Attila/Code/uzleti-liga-redesign/business-league.sublime-project",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/js/old-redesigner.js",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/sass/business-league.scss",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/js/main/components/business-league.jsx",
@@ -751,10 +774,8 @@
 		"/C/Users/Attila/Code/uzleti-liga-redesign/css/main/components/header.css",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/sass/_colors.scss",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/sass/_fonts.scss",
-		"/C/Users/Attila/Code/uzleti-liga-redesign/gulpfile.js",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/css/main/main-app.css",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/sass/main-app.scss",
-		"/C/Users/Attila/Code/uzleti-liga-redesign/business-league.sublime-project",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/js/main/components/business-league.js",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/js/matches.js",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/js/storage-handler.js",
@@ -856,12 +877,7 @@
 		"/C/Users/Attila/Code/chealt/code/client/components/editable.jsx",
 		"/C/Users/Attila/Code/chealt/code/client/styles/events.scss",
 		"/C/Users/Attila/Code/chealt/code/client/styles/3rd-party/datepicker.scss",
-		"/C/Users/Attila/Code/chealt/code/client/components/event-header.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/styles/editable.scss",
-		"/C/Users/Attila/Code/chealt/code/client/components/event-footer.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/components/header-profile.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/components/image-list.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/styles/image-list.scss"
+		"/C/Users/Attila/Code/chealt/code/client/components/event-header.jsx"
 	],
 	"find":
 	{
@@ -902,6 +918,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"\"",
 			"sidebar",
 			".menu",
 			"class",
@@ -1028,8 +1045,7 @@
 			"cursor",
 			"user.",
 			".profile-picture",
-			".func",
-			"this.isAttending()"
+			".func"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1050,8 +1066,69 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/redux.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								567,
+								567
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
+							"syntax": "Packages/Seti_UI/icons/Langs/Gulpfile JS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1107,6 +1184,22 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"red",
+				"js\\redux.js"
+			],
+			[
+				"glp",
+				"Gulpfile.js"
+			],
 			[
 				"ma",
 				"js\\main\\main-app.jsx"
@@ -1190,10 +1283,6 @@
 			[
 				"matcscss",
 				"sass\\matches.scss"
-			],
-			[
-				"gulp",
-				"gulpfile.js"
 			],
 			[
 				"inde",
@@ -1606,18 +1695,6 @@
 			[
 				"map",
 				"client\\components\\map.jsx"
-			],
-			[
-				"eve",
-				"client\\components\\event.jsx"
-			],
-			[
-				"gusts",
-				"client\\components\\guests.jsx"
-			],
-			[
-				"colle",
-				"lib\\collections.jsx"
 			]
 		],
 		"width": 0.0
