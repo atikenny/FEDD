@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import AddItem from './containers/AddItem';
-import List from './components/List'
+import Header from './components/Header';
+import List from './components/List';
 
 const getVisibleItems = (items) => {
     return items.filter(item => !item.removed);
@@ -17,9 +18,7 @@ const VisibleItems = connect(mapStateToProps)(List);
 
 const FEDD = () => (
     <div>
-        <header>
-            <h1>FEDD welcome!</h1>
-        </header>
+        <Header />
         <div className="content-container">
             <AddItem />
             <VisibleItems />

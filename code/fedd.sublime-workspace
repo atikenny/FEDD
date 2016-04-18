@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"P",
+				"PropTypes"
+			],
+			[
 				"conc",
 				"gulpConcat"
 			],
@@ -510,31 +514,11 @@
 			[
 				"funcion",
 				"function"
-			],
-			[
-				"shared",
-				"sharedWithItem"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "js/redux.js",
-			"settings":
-			{
-				"buffer_size": 68,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 686,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -543,17 +527,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 147.0,
-		"last_filter": "edpro",
+		"height": 342.0,
+		"last_filter": "sy",
 		"selected_items":
 		[
 			[
-				"edpro",
-				"Project: Edit Project"
+				"sy",
+				"Set Syntax: JSX"
+			],
+			[
+				"syntax js",
+				"Set Syntax: JavaScript Next"
 			],
 			[
 				"inp",
 				"Package Control: Install Package"
+			],
+			[
+				"edpro",
+				"Project: Edit Project"
 			],
 			[
 				"in",
@@ -578,10 +570,6 @@
 			[
 				"sys",
 				"Set Syntax: SCSS"
-			],
-			[
-				"sy",
-				"Set Syntax: JSX"
 			],
 			[
 				"syjs",
@@ -750,10 +738,21 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Attila/Code/FEDD/code/client/main.jsx",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/FEDD.jsx",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/reducers/items.js",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/actions/index.js",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/containers/AddItem.js",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/components/List.jsx",
+		"/C/Users/Attila/Code/FEDD/code/imports/ui/List.jsx",
 		"/C/Users/Attila/Code/FEDD/code/package.json",
+		"/C/Users/Attila/Code/FEDD/code/client/main.html",
+		"/C/Users/Attila/Code/FEDD/code/js/redux.js",
+		"/C/Users/Attila/Code/FEDD/code/index.html",
+		"/C/Users/Attila/Code/FEDD/code/gulpfile.js",
+		"/C/Users/Attila/Code/FEDD/code/index.js",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/gulpfile.js",
 		"/C/Users/Attila/Code/FEDD/code/Gulpfile.js",
-		"/C/Users/Attila/Code/FEDD/code/js/redux.js",
 		"/C/Users/Attila/Code/FEDD/.gitignore",
 		"/C/Users/Attila/Code/FEDD/code/fedd.sublime-project",
 		"/C/Users/Attila/Code/uzleti-liga-redesign/business-league.sublime-project",
@@ -866,18 +865,7 @@
 		"/C/Users/Attila/Code/chealt/code/packages/npm-container/.npm/package/node_modules/material-ui/lib/tabs/tab.js",
 		"/C/Users/Attila/Code/chealt/code/lib/collections.jsx",
 		"/C/Users/Attila/Code/chealt/code/client/subscriptions.js",
-		"/C/Users/Attila/Code/chealt/code/client/routes.jsx",
-		"/C/Users/Attila/AppData/Roaming/Sublime Text 3/Packages/User/react.sublime-snippet",
-		"/C/Users/Attila/Code/chealt/code/client/components/drawer.jsx",
-		"/C/Users/Attila/AppData/Roaming/Sublime Text 3/Packages/User/JSX.sublime-settings",
-		"/C/Users/Attila/Code/chealt/code/client/styles/drawer.scss",
-		"/C/Users/Attila/Code/chealt/code/client/components/layout/header.jsx",
-		"/C/Users/Attila/Code/chealt/code/packages/npm-container/.npm/package/node_modules/material-ui/src/svg-icons/hardware/router.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/components/event-title.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/components/editable.jsx",
-		"/C/Users/Attila/Code/chealt/code/client/styles/events.scss",
-		"/C/Users/Attila/Code/chealt/code/client/styles/3rd-party/datepicker.scss",
-		"/C/Users/Attila/Code/chealt/code/client/components/event-header.jsx"
+		"/C/Users/Attila/Code/chealt/code/client/routes.jsx"
 	],
 	"find":
 	{
@@ -918,6 +906,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ADD_TODO",
+			"AddTodo",
+			"App",
+			"var",
 			"\"",
 			"sidebar",
 			".menu",
@@ -1041,11 +1033,7 @@
 			"   ,",
 			"    ,",
 			"    ",
-			"')",
-			"cursor",
-			"user.",
-			".profile-picture",
-			".func"
+			"')"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1066,69 +1054,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/redux.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 68,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								65,
-								65
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 686,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								567,
-								567
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Seti_monokai (SL).tmTheme",
-							"syntax": "Packages/Seti_UI/icons/Langs/Gulpfile JS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1185,12 +1112,32 @@
 		"selected_items":
 		[
 			[
-				"gulp",
-				"gulpfile.js"
+				"action",
+				"imports\\ui\\actions\\index.js"
+			],
+			[
+				"reduce",
+				"imports\\ui\\reducers\\items.js"
+			],
+			[
+				"list",
+				"imports\\ui\\components\\List.jsx"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"inde",
+				"index.html"
 			],
 			[
 				"pack",
 				"package.json"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
 			],
 			[
 				"red",
@@ -1283,10 +1230,6 @@
 			[
 				"matcscss",
 				"sass\\matches.scss"
-			],
-			[
-				"inde",
-				"om-tutorial\\resources\\public\\index.html"
 			],
 			[
 				"corejs",
@@ -1679,22 +1622,6 @@
 			[
 				"imali",
 				"client\\components\\image-list.jsx"
-			],
-			[
-				"collec",
-				"lib\\collections.jsx"
-			],
-			[
-				"imscs",
-				"client\\styles\\image-list.scss"
-			],
-			[
-				"subsc",
-				"client\\subscriptions.js"
-			],
-			[
-				"map",
-				"client\\components\\map.jsx"
 			]
 		],
 		"width": 0.0
