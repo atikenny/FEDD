@@ -1,15 +1,31 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import AddItem from './containers/AddItem';
+import { removeItem } from './actions';
 import List from './components/List'
+
+const getVisibleItems = (items) => {
+    return items.filter(item => !item.removed);
+};
 
 const mapStateToProps = (state) => {
     return {
-        items: state.items
+        items: getVisibleItems(state.items)
     };
 };
 
-const VisibleItems = connect(mapStateToProps)(List);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onRemoveClick(id) {
+            dispatch(removeItem(id))
+        }
+    };
+};
+
+const VisibleItems = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(List);
 
 const FEDD = () => (
     <div>

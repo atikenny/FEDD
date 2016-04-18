@@ -7,3 +7,10 @@ export const addItem = (text) => {
         text
     };
 }
+
+export const removeItem = (id) => {
+    return {
+        type: 'REMOVE_ITEM',
+        id
+    };
+}

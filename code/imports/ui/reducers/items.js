@@ -5,8 +5,15 @@ const item = (state, action) => {
         case 'ADD_ITEM':
             return {
                 id: action.id,
-                text: action.text
+                text: action.text,
+                removed: false
             };
+        case 'REMOVE_ITEM':
+            if (state.id !== action.id) {
+                return state;
+            }
+            
+            return Object.assign({}, state, { removed: true });
         default:
             return state;
     }
@@ -19,6 +26,8 @@ const items = (state = [], action) => {
                 ...state,
                 item(undefined, action)
             ];
+        case 'REMOVE_ITEM':
+            return state.map(_item => item(_item, action));
         default:
             return state;
     }
