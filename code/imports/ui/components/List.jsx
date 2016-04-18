@@ -6,8 +6,7 @@ const List = ({ items, onRemoveClick }) => (
         {items.map((item) => (
             <li key={item.id}>
                 <span>{item.text}</span>
-                <RemoveItem
-                    onClick={() => onRemoveClick(item.id)} />
+                <RemoveItem itemId={item.id} />
             </li>
         ))}
     </ul>
