@@ -1,5 +1,3 @@
-import { combineReducers } from 'redux';
-
 const item = (state, action) => {
     switch (action.type) {
         case 'ADD_ITEM':
@@ -33,6 +31,4 @@ const items = (state = [], action) => {
     }
 };
 
-const listApp = combineReducers({ items });
-
-export default listApp;
+export default items;

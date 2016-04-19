@@ -1,1 +1,24 @@
 @import '{}/imports/ui/styles/sticky';
+
+body {
+    min-height: 2000px;
+}
+
+.header {
+    ul {
+        display: flex;
+        background-color: #ff5722;
+
+        li {
+            flex: 1;
+
+            a {
+                display: block;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                padding: 12px 24px;
+            }
+        }
+    }
+}

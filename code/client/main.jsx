@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import listApp from '../imports/ui/reducers/items.js';
+import listApp from '../imports/ui/reducers';
 import FEDD from '../imports/ui/FEDD.jsx';
 
 let store = createStore(listApp);

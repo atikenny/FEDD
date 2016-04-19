@@ -14,3 +14,15 @@ export const removeItem = (id) => {
         id
     };
 }
+
+export const hideSticky = () => {
+    return {
+        type: 'HIDE_STICKY'
+    };
+};
+
+export const showSticky = () => {
+    return {
+        type: 'SHOW_STICKY'
+    };
+};

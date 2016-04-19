@@ -18,7 +18,9 @@ const VisibleItems = connect(mapStateToProps)(List);
 
 const FEDD = () => (
     <div>
-        <Header />
+        <div className="header">
+            <Header />
+        </div>
         <div className="content-container">
             <AddItem />
             <VisibleItems />
