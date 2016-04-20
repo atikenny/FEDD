@@ -1,28 +1,26 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { showSticky, hideSticky } from '../actions';
+import { showSticky, hideSticky, setScrollTop } from '../actions';
+
+let scrollChangeDeffered;
 
 class Sticky extends Component {
-    componentWillMount() {
-        this.setState({
-            scrollTop: document.body.scrollTop
-        });
-    }
     componentDidMount() {
-        window.addEventListener('scroll', () => {
-            window.requestAnimationFrame(this.handleScroll.bind(this));
-        });
+        window.addEventListener('scroll', this.handleScroll.bind(this));
     }
     handleScroll() {
-        if (this.state.scrollTop > document.body.scrollTop) {
-            this.props.onScrollUp();
-        } else {
-            this.props.onScrollDown();
+        const isScrollChangedToUp = this.props.scrollTop > document.body.scrollTop && this.props.hidden;
+        const isScrollChangedToDown = this.props.scrollTop < document.body.scrollTop && !this.props.hidden;
+
+        clearTimeout(scrollChangeDeffered);
+
+        if (isScrollChangedToUp) {
+            scrollChangeDeffered = setTimeout(this.props.onScrollUp, 100);
+        } else if (isScrollChangedToDown) {
+            scrollChangeDeffered = setTimeout(this.props.onScrollDown, 100);
         }
 
-        this.setState({
-            scrollTop: document.body.scrollTop
-        });
+        this.props.onAnyScroll(document.body.scrollTop);
     }
     render() {
         let stickyClassName = 'sticky';
@@ -44,7 +42,8 @@ Sticky.propTypes = {
 
 const mapStateToProps = (state) => {
     return {
-        hidden: state.sticky
+        hidden: state.sticky,
+        scrollTop: state.scrollTop
     };
 }
 
@@ -55,6 +54,9 @@ const mapDispatchToProps = (dispatch) => {
         },
         onScrollDown: () => {
             dispatch(hideSticky());
+        },
+        onAnyScroll: (scrollTop) => {
+            dispatch(setScrollTop(scrollTop));
         }
     };
 };

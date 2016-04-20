@@ -26,3 +26,10 @@ export const showSticky = () => {
         type: 'SHOW_STICKY'
     };
 };
+
+export const setScrollTop = (scrollTop) => {
+    return {
+        type: 'SET_SCROLL_TOP',
+        scrollTop: scrollTop
+    };
+};
