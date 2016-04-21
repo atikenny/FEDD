@@ -1,0 +1,19 @@
+@import '{}/imports/ui/styles/variables';
+@import '{}/imports/ui/styles/colors';
+
+.header {
+    background-color: $mainColor;
+    height: $headerHeight;
+    display: flex;
+    padding: 8px;
+
+    > * {
+        flex: 1;
+    }
+
+    .menu-opener {
+        display: flex;
+        align-items: center;
+        color: $mainColorText;
+    }
+}

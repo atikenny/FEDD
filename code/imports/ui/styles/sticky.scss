@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     transform: translateY(0);
     transition: all .6s ease;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 
     &.hidden {
         transform: translateY(-100%);

@@ -25,7 +25,7 @@ class Sticky extends Component {
     }
 
     render() {
-        let stickyClassName = 'sticky';
+        let stickyClassName = `${this.props.className} sticky`;
 
         if (this.props.hidden) {
             stickyClassName += ' hidden';
