@@ -8,6 +8,7 @@ class Sticky extends Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll.bind(this));
     }
+
     handleScroll() {
         const isScrollChangedToUp = this.props.scrollTop > document.body.scrollTop && this.props.hidden;
         const isScrollChangedToDown = this.props.scrollTop < document.body.scrollTop && !this.props.hidden;
@@ -15,13 +16,14 @@ class Sticky extends Component {
         clearTimeout(scrollChangeDeffered);
 
         if (isScrollChangedToUp) {
-            scrollChangeDeffered = setTimeout(this.props.onScrollUp, 100);
+            scrollChangeDeffered = setTimeout(this.props.hideSticky, 100);
         } else if (isScrollChangedToDown) {
-            scrollChangeDeffered = setTimeout(this.props.onScrollDown, 100);
+            scrollChangeDeffered = setTimeout(this.props.showSticky, 100);
         }
 
-        this.props.onAnyScroll(document.body.scrollTop);
+        this.props.setScrollTop(document.body.scrollTop);
     }
+
     render() {
         let stickyClassName = 'sticky';
 
@@ -33,7 +35,7 @@ class Sticky extends Component {
             <div className={stickyClassName}>{this.props.children}</div>
         );
     }
-};
+}
 
 Sticky.propTypes = {
     hidden: PropTypes.bool,
@@ -49,13 +51,13 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onScrollUp: () => {
+        hideSticky: () => {
             dispatch(showSticky());
         },
-        onScrollDown: () => {
+        showSticky: () => {
             dispatch(hideSticky());
         },
-        onAnyScroll: (scrollTop) => {
+        setScrollTop: (scrollTop) => {
             dispatch(setScrollTop(scrollTop));
         }
     };
