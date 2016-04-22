@@ -1,15 +1,16 @@
 import React, { PropTypes } from 'react';
 import RemoveItem from '../containers/RemoveItem';
+import Card from 'material-ui/Card';
 
 const List = ({ items, onRemoveClick }) => (
-    <ul>
+    <div class="items">
         {items.map((item) => (
-            <li key={item.id}>
+            <Card key={item.id}>
                 <span>{item.text}</span>
                 <RemoveItem itemId={item.id} />
-            </li>
+            </Card>
         ))}
-    </ul>
+    </div>
 );
 
 List.propTypes = {
