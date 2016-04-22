@@ -20,7 +20,9 @@ const FEDD = () => (
     <div>
         <Header />
         <div className="content-container">
-            <AddItem />
+            <div className="controls">
+                <AddItem />
+            </div>
             <VisibleItems />
         </div>
     </div>

@@ -1,0 +1,10 @@
+@import '{}/imports/ui/styles/variables';
+
+.items {
+    margin: $gutterSize;
+}
+
+.item-card {
+    margin: $gutterSize 0;
+    padding: 20px;
+}

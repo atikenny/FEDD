@@ -1,13 +1,18 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { addItem } from '../actions';
+import React        from 'react';
+import { connect }  from 'react-redux';
+import { addItem }  from '../actions';
+import RaisedButton from 'material-ui/RaisedButton';
 
-let AddItem = ({ dispatch }) => (
-    <button onClick={() => {
-        dispatch(addItem('new item'));
-    }}>Add Item</button>
+const AddItem = ({ addItem }) => (
+    <RaisedButton primary={true} onClick={addItem}>Add Item</RaisedButton>
 );
 
-AddItem = connect()(AddItem);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addItem: () => {
+            dispatch(addItem('new item'));
+        }
+    };
+};
 
-export default AddItem;
+export default connect(null, mapDispatchToProps)(AddItem);

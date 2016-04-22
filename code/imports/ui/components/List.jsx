@@ -1,11 +1,11 @@
-import React, { PropTypes } from 'react';
-import RemoveItem from '../containers/RemoveItem';
-import Card from 'material-ui/Card';
+import React, { PropTypes }     from 'react';
+import RemoveItem               from '../containers/RemoveItem';
+import Card                     from 'material-ui/Card';
 
 const List = ({ items, onRemoveClick }) => (
-    <div class="items">
+    <div className="items">
         {items.map((item) => (
-            <Card key={item.id}>
+            <Card key={item.id} className="item-card">
                 <span>{item.text}</span>
                 <RemoveItem itemId={item.id} />
             </Card>

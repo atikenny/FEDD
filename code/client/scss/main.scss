@@ -18,5 +18,9 @@
 }
 
 body {
-    padding-top: $headerHeight + 12px;
+    padding-top: $headerHeight;
+}
+
+.controls {
+    margin: $gutterSize;
 }

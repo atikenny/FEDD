@@ -1,13 +1,18 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { removeItem } from '../actions';
+import React            from 'react';
+import { connect }      from 'react-redux';
+import { removeItem }   from '../actions';
+import RaisedButton     from 'material-ui/RaisedButton';
 
-let RemoveItem = ({ dispatch, itemId }) => (
-    <button onClick={() => {
-        dispatch(removeItem(itemId));
-    }}>Remove Item</button>
+const RemoveItem = ({ removeItem }) => (
+    <RaisedButton className="remove-button" onClick={removeItem}>Remove</RaisedButton>
 );
 
-RemoveItem = connect()(RemoveItem);
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        removeItem: () => {
+            dispatch(removeItem(ownProps.itemId));
+        }
+    };
+};
 
-export default RemoveItem;
+export default connect(null, mapDispatchToProps)(RemoveItem);
