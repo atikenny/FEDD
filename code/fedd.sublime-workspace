@@ -393,7 +393,7 @@
 			],
 			[
 				"compo",
-				"component	React.PropTypes.component"
+				"component\tReact.PropTypes.component"
 			],
 			[
 				"valida",
@@ -445,7 +445,7 @@
 			],
 			[
 				"func",
-				"function	React.PropTypes.func"
+				"function\tReact.PropTypes.func"
 			],
 			[
 				"flo",
@@ -457,7 +457,7 @@
 			],
 			[
 				"com",
-				"component	React.PropTypes.component"
+				"component\tReact.PropTypes.component"
 			],
 			[
 				"isadmin",
@@ -519,6 +519,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 877,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -734,7 +742,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Attila/Code/FEDD/code"
+		"/C/Users/barth/Code/FEDD/code"
 	],
 	"file_history":
 	[
@@ -1054,8 +1062,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/Npm (JSON).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1651,8 +1690,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 306.0,
+	"side_bar_visible": true,
+	"side_bar_width": 377.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
